@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Anton|Cabin|Lato|Fjalla+One|Montserrat|Roboto&display=swap" rel="stylesheet">
+    <!-- font awesom  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+   <!-- Owl Carousel -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="about.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<!-- gallery css -->
+<link rel="stylesheet" type="text/css" href="csss/all.css">
+<link rel="stylesheet" type="text/css" href="csss/all.min.css">
+<link rel="stylesheet" type="text/css" href="csss/lightbox.css">
+<link rel="stylesheet" type="text/css" href="csss/flexslider.css">
+<link rel="stylesheet" type="text/css" href="csss/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="csss/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="csss/jquery.rateyo.css"/>
+<link rel="stylesheet" type="text/css" href="csss/jquery.mmenu.all.css" />
+<!-- <link rel="stylesheet" type="text/css" href="inner-page-style.css"> -->
+<link rel="stylesheet" type="text/css" href="style.css">
+      <style>
+
+        /* img slide */
+
+
+ .slide-1 {
+  background-image: url(images/p1.jpg);
+}
+
+.slide-2 {
+  background-image: url(images/p2.jpg);
+}
+
+.slide-3 {
+  background-image: url(images/p3.jpg);
+} 
+
+ /* carouseul slide */
+
+ .slide-content h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-left: 40px;
+  font-weight: lighter;
+  line-height: 58px;
+}
+.slide-2 h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-left: 40px;
+  font-weight: lighter;
+  line-height: 55px;
+}
+.slide-3 h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-left: 40px;
+  font-weight: lighter;
+  line-height: 55px;
+}
+
+
+    /* Mobile view (max-width: 480px) */
+    @media (max-width: 480px) {
+      .slide-content h1 {
+        font-size: 25px;
+        margin-left: 20px;
+      }
+
+      .slide-2 h1,
+      .slide-3 h1 {
+        font-size: 25px;
+        margin-left: 20px;
+      }
+    }
+
+    /* project gallery */
+
+    .lalu h1{
+        font-size: 56px;
+    }
+
+
+
+/* footer */
+
+
+        footer {
+          width: 100%;
+          background:black;
+      }
+      .footer-containering .content_1 img {
+          height: 25px;
+          width: 180px;
+      }
+      .footer-containering {
+          display: flex;
+          justify-content: space-between;
+          padding: 60px 0;
+      } 
+      .footer-containering h4 {
+          color:white;
+          font-weight: 500;
+          letter-spacing: 1px;
+          margin-bottom: 25px;
+          font-size: 18px;
+      }
+      .footer-containering a {
+          display: block;
+          text-decoration: none;
+          color:grey;
+          margin-bottom: 15px;
+          font-size: 14px;
+      }
+      .footer-containering .content_1 p,
+      .footer-containering .content_4 p {
+          color:grey;
+          margin: 25px 0;
+          font-size: 14px;
+      }
+      .footer-containering .content_4 input[type="email"] {
+          background-color:black;
+          border: none;
+          color:white;
+          outline: none;
+          padding: 15px 0;
+      }
+      .footer-containering .content_4 input[type="name"] {
+          background-color:black;
+          border: none;
+          color:white;
+          outline: none;
+          padding: 15px 0;
+      }
+      .footer-containering .content_4 .f-mail {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+      .content_4 .inputSubmit{
+    padding: 0px 20px;
+    background-color: #e91e64;
+    border: none;
+    color: white;
+    margin-top: 10px;
+    border-radius: 2px;
+    width: 150px;
+    height: 40px;
+}
+    .footer-containering .content_4 .bx {
+          color:white;
+      }
+     .f-design {
+          width: 100%;
+          color:white;
+          text-align: center;
+      }
+     .f-design .f-design-txt {
+          border-top: 1px solid grey;
+          padding: 25px 0;
+          font-size: 14px;
+          color: grey;
+      }
+      @media (max-width: 500px) {
+        .footer-containering {
+          display: flex;
+          flex-direction: column;
+          margin-left: 0;
+      }
+      .footer-containering .content_1 {
+          margin-bottom: 30px;
+          padding: 0px;
+          font-size: 16px;
+      }
+      .best-seller img {
+          padding-top: 40px;
+      }
+      .footer-col{
+         margin-left: -500px;
+      }
+      .footer-col h4{
+          margin-left: -100px;
+      }
+      }
+      @media(min-width: 501px) and (max-width: 768px) {
+        .footer-containering {
+          display: flex;
+          flex-direction: column;
+      }
+      .footer-containering .content_1 {
+          margin-bottom: 30px;   
+      }
+      .best-seller img {
+          padding-top: 40px;
+      }
+      .footer-containering{
+        padding: 50px;
+        margin-left: 30px;
+      }
+      }
+</style>
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"></script>
+      
+     
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Cadpoint</a>
+  
+        <div class="menu-btn"></div>
+  
+        <div class="nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="course.html">Courses</a>
+         
+          <a href="project.html">Projects</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+
+       
+   
+      </header>
+
+      <!-- slider -->
+
+      <div class="owl-carousel owl-theme">
+        <div class="slide slide-1">
+            <div class="slide-content">
+                <h1>A project transforms ambition into <span style="color: #f39000;font-weight: bold">achievement</span>.</h1>
+            </div>
+        </div>
+        <div class="slide slide-2">
+            <div class="slide-content">
+            <h1>Project development is the journey from inspiration to <span style="color: #f39000;font-weight: bold">innovation</span>.</h1>
+            </div>
+        </div>
+        <div class="slide slide-3">
+            <div class="slide-content">
+                <h1>Every project developed is a step forward in turning dreams into <span style="color: #f39000;font-weight: bold">deliverables</span>.</h1>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Custom Javascript -->
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                items:1,
+                loop:true,
+                nav:true,
+                dots:true,
+                autoplay:true,
+                autoplaySpeed:1000,
+                smartSpeed:1500,
+                autoplayHoverPause:true
+            });
+        });
+    </script>
+
+      <!-- projects section -->
+     
+
+      <div class="lalu"><br>
+        <center> <h1>Our <span style="color: #f39000;">Projects</span></h1><br>
+        <p style="font-size: 20px;">"Project development is where creativity meets structure, and each milestone is a testament to innovation, dedication, and purpose."</p>
+    
+       <br>
+      <nav>
+        <button class="filter" onclick="filterGallery('all')">All</button>
+        <button class="filter" onclick="filterGallery('civil')">Civil</button>
+        <button class="filter" onclick="filterGallery('mech')">Mech</button>
+        <button class="filter" onclick="filterGallery('eee')">EEE</button>
+        <button class="filter" onclick="filterGallery('programming')">Programming</button>
+        <button class="filter" onclick="filterGallery('accounting')">Accounting</button>
+        <button class="filter" onclick="filterGallery('grahicdesign')">Graphic Design</button>
+      </center>
+        <!-- Add more filters as needed -->
+      </nav>
+    </div>
+    <section id="gallery">
+        <div class="photo all">
+            <img src="images/gallery-img1.jpg" alt="Hot Air Balloon">
+            <p class="caption">Hot Air Balloon</p>
+        </div>
+        <div class="photo all">
+            <img src="images/gallery-img4.jpg" alt="Carpenter In Front Of House">
+            <p class="caption">Carpenter In Front Of House</p>
+        </div>
+        <div class="photo all">
+            <img src="images/gallery-img5.jpg" alt="Surfer Catching Air">
+            <p class="caption">Surfer Catching Air</p>
+        </div>
+        <div class="photo all">
+            <img src="images/gallery-img8.jpg" alt="Lake With Mountains">
+            <p class="caption">Lake With Mountains</p>
+        </div>
+        <div class="photo all">
+            <img src="images/events.jpg" alt="Cabin On The Lake">
+            <p class="caption">Cabin On The Lake</p>
+        </div>
+        <div class="photo all">
+            <img src="images/gallery-img10.jpg" alt="Dramatic Hillside">
+            <p class="caption">Dramatic Hillside</p>
+        </div>
+        <div class="photo all">
+            <img src="images/travel-img.jpg" alt="Dramatic Female Portrait">
+            <p class="caption">Dramatic Female Portrait</p>
+        </div>
+        <div class="photo all">
+            <img src="images/course2-img.jpg" alt="Woman With Balloons">
+            <p class="caption">Woman With Balloons</p>
+        </div>
+        <div class="photo all">
+            <img src="images/gallery-img12.jpg" alt="Woman With Binary Projection">
+            <p class="caption">Woman With Binary Projection</p>
+        </div>
+  
+  
+        <!-- civil -->
+  
+  
+        <div class="photo civil">
+          <img src="images/civil/twocyclinder.png" alt="Hot Air Balloon">
+          <p class="caption">Two Cyclinder Stream Engine</p>
+      </div>
+      <div class="photo civil">
+          <img src="images/civil/RESIDENTIAL BUILDING.png" alt="Carpenter In Front Of House">
+          <p class="caption">Residential Building</p>
+      </div>
+      <div class="photo civil">
+          <img src="images/gallery-img5.jpg" alt="Surfer Catching Air">
+          <p class="caption">Surfer Catching Air</p>
+      </div>
+      <div class="photo civil">
+          <img src="images/gallery-img8.jpg" alt="Lake With Mountains">
+          <p class="caption">Lake With Mountains</p>
+      </div>
+      <div class="photo civil">
+          <img src="images/events.jpg" alt="Cabin On The Lake">
+          <p class="caption">Cabin On The Lake</p>
+      </div>
+      <div class="photo all">
+          <img src="images/gallery-img10.jpg" alt="Dramatic Hillside">
+          <p class="caption">Dramatic Hillside</p>
+      </div>  
+  
+  
+      <!-- mech -->
+  
+  
+      <div class="photo mech">
+          <img src="images/gallery-img5.jpg" alt="Surfer Catching Air">
+          <p class="caption">Surfer Catching Air</p>
+      </div>
+      <div class="photo mech">
+          <img src="images/gallery-img8.jpg" alt="Lake With Mountains">
+          <p class="caption">Lake With Mountains</p>
+      </div>
+      <div class="photo mech">
+          <img src="images/events.jpg" alt="Cabin On The Lake">
+          <p class="caption">Cabin On The Lake</p>
+      </div>
+      <div class="photo mech">
+          <img src="images/gallery-img10.jpg" alt="Dramatic Hillside">
+          <p class="caption">Dramatic Hillside</p>
+      </div>
+      <div class="photo mech">
+          <img src="images/travel-img.jpg" alt="Dramatic Female Portrait">
+          <p class="caption">Dramatic Female Portrait</p>
+      </div>
+      <div class="photo mech">
+          <img src="images/course2-img.jpg" alt="Woman With Balloons">
+          <p class="caption">Woman With Balloons</p>
+      </div>
+      <div class="photo mech">
+          <img src="images/gallery-img12.jpg" alt="Woman With Binary Projection">
+          <p class="caption">Woman With Binary Projection</p>
+      </div>
+      
+  
+      <!-- EEE -->
+  
+      <div class="photo eee">
+          <img src="images/gallery-img5.jpg" alt="Surfer Catching Air">
+          <p class="caption">Surfer Catching Air</p>
+      </div>
+      <div class="photo eee">
+          <img src="images/gallery-img8.jpg" alt="Lake With Mountains">
+          <p class="caption">Lake With Mountains</p>
+      </div>
+      <div class="photo eee">
+          <img src="images/events.jpg" alt="Cabin On The Lake">
+          <p class="caption">Cabin On The Lake</p>
+      </div>
+      <div class="photo eee">
+          <img src="images/gallery-img10.jpg" alt="Dramatic Hillside">
+          <p class="caption">Dramatic Hillside</p>
+      </div>
+      <div class="photo eee">
+          <img src="images/travel-img.jpg" alt="Dramatic Female Portrait">
+          <p class="caption">Dramatic Female Portrait</p>
+      </div>
+      <div class="photo eee">
+          <img src="images/course2-img.jpg" alt="Woman With Balloons">
+          <p class="caption">Woman With Balloons</p>
+      </div>
+      <div class="photo eee">
+          <img src="images/gallery-img12.jpg" alt="Woman With Binary Projection">
+          <p class="caption">Woman With Binary Projection</p>
+      </div>
+      <div class="photo eee">
+          <img src="images/gallery-img5.jpg" alt="Surfer Catching Air">
+          <p class="caption">Surfer Catching Air</p>
+      </div>
+      <div class="photo eee">
+          <img src="images/gallery-img8.jpg" alt="Lake With Mountains">
+          <p class="caption">Lake With Mountains</p>
+      </div>
+  
+      <!-- programming -->
+  
+  
+      <div class="photo programming">
+          <img src="images/programming/Restaurent.jpg" alt="Surfer Catching Air">
+          <p class="caption">Restaurent Management System using Python</p>
+      </div>
+      <div class="photo programming">
+          <img src="images/programming/ATM.png" alt="Lake With Mountains">
+          <p class="caption">ATM Management System using JAVA</p>
+      </div>
+      <div class="photo programming">
+          <img src="images/programming/CRICKET.png" alt="Cabin On The Lake">
+          <p class="caption">Cricket Score board using C</p>
+      </div>
+      <div class="photo programming">
+          <img src="images/programming/liveuser.png" alt="Dramatic Hillside">
+          <p class="caption">Live User Filter using HTML,CSS,JS</p>
+      </div>
+      <div class="photo programming">
+          <img src="images/programming/ludo.png" alt="Dramatic Female Portrait">
+          <p class="caption">LUDO game using JAVA</p>
+      </div>
+      <div class="photo programming">
+          <img src="images/programming/musicplayer.png" alt="Woman With Balloons">
+          <p class="caption">Music Player using python</p>
+      </div>
+      <div class="photo programming">
+          <img src="images/programming/puzzle.png" alt="Woman With Binary Projection">
+          <p class="caption">Puzzle Game using JAVA</p>
+      </div>
+      <div class="photo programming">
+        <img src="images/programming/registerform.png" alt="Woman With Binary Projection">
+        <p class="caption">Cadpoint Registration Form using JAVA</p>
+    </div>
+    <div class="photo programming">
+        <img src="images/programming/sales.jpg" alt="Woman With Binary Projection">
+        <p class="caption">Sales Management System using Python</p>
+    </div>
+    <div class="photo programming">
+        <img src="images/programming/tablecreation.png" alt="Woman With Binary Projection">
+        <p class="caption">Table Creation using MYSQL</p>
+    </div>
+  
+  
+      <!-- accounting -->
+  
+      <div class="photo accounting">
+          <img src="images/accounting/TALLY FINANCE AND COSTING.jpg" alt="Hot Air Balloon">
+          <p class="caption">Tally Finance and Costing </p>
+      </div>
+      <div class="photo accounting">
+          <img src="images/accounting/PAYSLIP.png" alt="Carpenter In Front Of House">
+          <p class="caption">Employee payslip using Tally</p>
+      </div>
+      <div class="photo accounting">
+          <img src="images/accounting/price.png" alt="Surfer Catching Air">
+          <p class="caption">Price List and Price Level</p>
+      </div>
+  
+      <!-- graphic design -->
+  
+      <div class="photo grahicdesign">
+          <img src="images/graphicdesign/fashiondesign.png" alt="Hot Air Balloon">
+          <p class="caption">Fashion designing using photoshop</p>
+      </div>
+      <div class="photo grahicdesign">
+          <img src="images/gallery-img4.jpg" alt="Carpenter In Front Of House">
+          <p class="caption">Carpenter In Front Of House</p>
+      </div>
+      <div class="photo grahicdesign">
+          <img src="images/gallery-img5.jpg" alt="Surfer Catching Air">
+          <p class="caption">Surfer Catching Air</p>
+      </div>
+      <div class="photo grahicdesign">
+          <img src="images/gallery-img8.jpg" alt="Lake With Mountains">
+          <p class="caption">Lake With Mountains</p>
+      </div>
+      <div class="photo grahicdesign">
+          <img src="images/events.jpg" alt="Cabin On The Lake">
+          <p class="caption">Cabin On The Lake</p>
+      </div>
+      <div class="photo grahicdesign">
+          <img src="images/gallery-img10.jpg" alt="Dramatic Hillside">
+          <p class="caption">Dramatic Hillside</p>
+      </div>  
+      
+      
+      
+      
+        
+    </section>
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01" style="margin-top: 25px;">
+        <div id="caption"></div>
+    </div>  
+
+
+
+    
+
+      
+      <!--footer -->
+<br><br><br>
+
+   <footer>
+    
+    <div class="footer-containering container" style="padding: 20px;">
+        <div class="content_1">
+            <a href="#">CADPOINT</a>
+            <p>The customer is at the heart of our<br>unique business model, which includes<br>design.</p>
+        </div>
+        <div class="content_2">
+            <h4>FINEGAP</h4>
+            <a href="#sellers">Tutorials</a>
+            <a href="#sellers">Programing</a>
+            <a href="#sellers">Development</a>
+            <a href="#sellers">Technology</a>
+        </div>
+        <div class="content_2">
+            <h4>PROPERTIES</h4>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="course.html">Courses</a>
+            <a href="project.html">Project</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+      <div class="content_2">
+        <h4>PROPERTIES</h4>
+        <a href="#sellers">API Integration</a>
+        <a href="#sellers">Web Development</a>
+        <a href="#sellers">Mobile Development</a>
+    </div>
+    <div class="content_4">
+      <h4>NEWLETTER</h4>
+      <p>Be the first to know about new<br>arrivals, look books, sales & promos!</p>
+      <div class="f-mail">
+        <input type="name" placeholder="Your Name">
+        <i class='bx bx-envelope'></i>
+    </div>
+    <hr>
+      <div class="f-mail">
+          <input type="email" placeholder="Your Email">
+          <i class='bx bx-envelope'></i>
+      </div>
+            <hr>
+            <input type="submit" value="Submit" class="inputSubmit">
+        </div>
+    </div>
+</footer>
+<script src="app.js"></script>
+</body>
+
+</html>

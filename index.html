@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Created by Tivotal-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Cad Project</title>
+
+    <!--font awesome(for icons)-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <!--css file-->
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="footer.css"/>
+    <link rel="stylesheet" href="about.css">
+    <!-- slider link -->
+     <!--=============== REMIXICONS ===============-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+     <!--=============== SWIPER CSS ===============-->
+     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+     <!--=============== CSS ===============-->
+     <link rel="stylesheet" href="assets/css/styles.css">
+     <!-- footer -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <style>
+        footer {
+          width: 100%;
+          background: black;
+          
+      }
+      .footer-containering .content_1 img{
+          height: 25px;
+          width: 180px;
+      }
+      .footer-containering{
+          display: flex;
+          justify-content: space-between;
+          padding: 60px 0;
+      } 
+      .footer-containering h4{
+          color:#f39000;
+          font-weight: 500;
+          letter-spacing: 1px;
+          margin-bottom: 25px;
+          font-size: 18px;
+          font-weight: bold;
+      }
+      .footer-containering a{
+          display: block;
+          text-decoration: none;
+          color: white;
+          margin-bottom: 15px;
+          font-size: 14px;
+      }
+      .footer-containering .content_1 p,
+      .footer-containering .content_5 p {
+          color: white;
+          margin: 25px 0;
+          font-size: 16px;
+      }
+      .footer-containering .content_5 input[type="email"] {
+          background-color: black;
+          border: none;
+          color:white;
+          outline: none;
+          padding: 15px 0;
+      }
+      .footer-containering .content_5 input[type="name"] {
+          background-color: black;
+          border: none;
+          color:white;
+          outline: none;
+          padding: 15px 0;
+      }
+      .footer-containering .content_5 .f-mail {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+      .content_5 .inputSubmit{
+    padding: 0px 20px;
+    background-color: #f39000;
+    border: none;
+    color:white;
+    margin-top: 10px;
+    border-radius: 2px;
+    width: 150px;
+    height: 40px;
+}
+    .footer-containering .content_5 .bx {
+          color:white;
+      }
+     .f-design {
+          width: 100%;
+          color:white;
+          text-align: center;
+      }
+     .f-design .f-design-txt {
+          border-top: 1px solid white;
+          padding: 25px 0;
+          font-size: 16px;
+          color: white;
+      }
+      @media (max-width: 500px) {
+        .footer-containering {
+          display: flex;
+          flex-direction: column;
+          margin-left: -70px;
+         }
+      .footer-containering .content_1{
+          margin-bottom: 30px;
+          padding: 0px;
+          font-size: 16px;
+          top: 180px;
+          position: relative;
+          margin-left: 60px;
+         }
+      .footer-containering .content_2{ 
+         margin-bottom: -200px;  
+         position: relative;
+         top: 40px;
+         margin-left:-150px;
+      }
+      .footer-containering .content_3{
+         margin-bottom: -130px;
+         margin-top: 300PX;
+         position: relative;
+         top: 40px;
+         margin-left:-130px;
+      }
+      .footer-containering .content_4{
+         margin-bottom: -20px;
+         margin-top: 300PX;
+         position: relative;
+         top: 50px;
+         margin-left: -100px;
+      }
+      .footer-containering .content_5{
+         margin-left: 40px;
+         position: relative;
+         top: -180px;
+         margin-bottom: -180px;
+      }
+      
+      .best-seller img {
+          padding-top: 40px;
+      }
+      .footer-col{
+         margin-left: -500px;
+      }
+      .footer-col h4{
+          margin-left: -100px;
+      }
+
+      }
+      @media(min-width: 501px) and (max-width: 768px) {
+        .footer-containering {
+          display: flex;
+          flex-direction: column;
+      }
+      .footer-containering .content_1 {
+          margin-bottom: 30px;
+          position: relative;
+      }
+      .best-seller img {
+          padding-top: 40px;
+      }
+      .footer-containering{
+        padding: 50px;
+        margin-left: 30px;
+      }
+      }
+</style> 
+   </head>
+  <body>
+     <header class="header">
+      <a href="#" class="logo">Cadpoint</a>
+
+      <div class="menu-btn"></div>
+
+      <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="course.html">Courses</a> 
+        <a href="project.html">Projects</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </header> 
+
+    <section class="home">
+      <video class="active" src="images/course-video.mp4" autoplay muted loop></video>
+      <video src="images/video2.mp4" autoplay muted loop></video>
+      <video src="images/video3.mp4" autoplay muted loop></video>
+
+      <div class="content">
+        <h1><span style="font-size: 40px; color: white;">learning <span>today</span></span><br><span>leading </span>tomorrow.</h1>
+        <p>
+         "Empowering students to reach new heights,
+         with a blend of knowledge, strategy, and passion.
+         Our coaching isn’t just about exams; it’s about life skills—
+         preparing you for the challenges beyond the classroom."
+        </p>
+        <a href="#">Read more</a>
+      </div>
+
+      <div class="icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/kumbakonamcadpoint_/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/people/Cadpoint-kumbakonam/"><i class="fab fa-facebook-f"></i></a>
+      </div>
+
+      <div class="video-nav">
+        <div class="nav-item active"></div>
+        <div class="nav-item"></div>
+        <div class="nav-item"></div>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+
+    <br>
+
+    <!-- about us -->
+
+    <br>
+    <div class="about">
+      <div class="heading">
+          <h1 style="margin-top: -50px;">About Us</h1>
+      </div>
+      <br><br><br><br>
+      <div class="wrapper">
+          <div class="content">
+              <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, molestias.</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolorum quia impedit minima, provident pariatur ea cumque facere, quis sint dicta corporis reprehenderit expedita voluptate sequi, unde quas illo hic.</p>
+              <a href="" class="btn">Join Us Today</a>
+          </div>
+          <div class="image">
+              <img src="data:image/jpeg;base64,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" style="height: 400px; width: 400px; margin-left: 100px; margin-top: -60px;">
+          </div>
+      </div>
+  </div>
+
+    <!-- slider -->
+
+    <div class="head">
+      <h1>Top Certified Cources</h1>
+  </div>
+
+    <section class="container">
+      <div class="card__container swiper">
+         <div class="card__content">
+            <div class="swiper-wrapper">
+               <article class="card__article swiper-slide">
+                  <div class="card__image">
+                     <img src="images/civil.jpg"  width="100%" style="border-radius: 25px 25px 0 0;">
+                     
+                  </div>
+   
+                  <div class="card__data">
+                     <h3 class="card__name">civil CADD</h3>
+                     <p class="card__description" style="padding: 0px; font-size: 15px;">
+                        Project based assessment | World-wide online class |  
+                        International authourized certificate | Placement support.
+                     </p>
+   
+                     <a href="#" class="card__button">View More</a>
+                  </div>
+               </article>
+   
+               <article class="card__article swiper-slide">
+                  <div class="card__image">
+                     <img src="images/ec.jpg" width="100%" style="border-radius: 25px 25px 0 0;">
+                     
+                  </div>
+   
+                  <div class="card__data">
+                     <h3 class="card__name">EEE CADD</h3>
+                     <p class="card__description" style="padding: 0px; font-size: 15px;">
+                        Project based assessment | World-wide online class |  
+                        International authourized certificate | Placement support.
+                     </p>
+   
+                     <a href="#" class="card__button">View More</a>
+                  </div>
+               </article>
+   
+               <article class="card__article swiper-slide">
+                  <div class="card__image">
+                     <img src="images/mc2.jpg" width="100%" style="border-radius: 25px 25px 0 0;">
+                     
+                  </div>
+   
+                  <div class="card__data">
+                     <h3 class="card__name">Mechanical CADD</h3>
+                     <p class="card__description" style="padding: 0px; font-size: 15px;">
+                        Project based assessment | World-wide online class |  
+                        International authourized certificate | Placement support.
+                     </p>
+   
+                     <a href="#" class="card__button">View More</a>
+                  </div>
+               </article>
+   
+               <article class="card__article swiper-slide">
+                  <div class="card__image">
+                     <img src="images/gd.jpg"width="100%" style="border-radius: 25px 25px 0 0;">
+                     
+                  </div>
+   
+                  <div class="card__data">
+                     <h3 class="card__name">Graphic Designing</h3>
+                     <p class="card__description" style="padding: 0px; font-size: 15px;">
+                        Project based assessment | World-wide online class |  
+                        International authourized certificate | Placement support.
+                     </p>
+   
+                     <a href="#" class="card__button">View More</a>
+                  </div>
+               </article>
+
+               <article class="card__article swiper-slide">
+                  <div class="card__image">
+                     <img src="images/sd.jpg"width="100%" style="border-radius: 25px 25px 0 0;">
+                     
+                  </div>
+   
+                  <div class="card__data">
+                     <h3 class="card__name">Programming</h3>
+                     <p class="card__description" style="padding: 0px; font-size: 15px;">
+                        Project based assessment | World-wide online class |  
+                        International authourized certificate | Placement support.
+                     </p>
+   
+                     <a href="#" class="card__button">View More</a>
+                  </div>
+               </article>
+
+               <article class="card__article swiper-slide">
+                  <div class="card__image">
+                     <img src="images/sp.jpg"width="100%" style="border-radius: 25px 25px 0 0;">
+                     
+                  </div>
+   
+                  <div class="card__data">
+                     <h3 class="card__name">Deep Learning</h3>
+                     <p class="card__description" style="padding: 0px; font-size: 15px;">
+                        Project based assessment | World-wide online class |  
+                        International authourized certificate | Placement support.
+                     </p>
+   
+                     <a href="#" class="card__button">View More</a>
+                  </div>
+               </article>
+
+               <article class="card__article swiper-slide">
+                  <div class="card__image">
+                     <img src="images/ms.jpg" width="100%" style="border-radius: 25px 25px 0 0;">
+                     
+                  </div>
+   
+                  <div class="card__data">
+                     <h3 class="card__name">MS Office</h3>
+                     <p class="card__description" style="padding: 0px; font-size: 15px;">
+                        Project based assessment | World-wide online class |  
+                        International authourized certificate | Placement support.
+                     </p>
+   
+                     <a href="#" class="card__button">View More</a>
+                  </div>
+               </article>
+
+               <article class="card__article swiper-slide">
+                  <div class="card__image">
+                     <img src="images/tally.jpg" width="100%" style="border-radius: 25px 25px 0 0;">
+                     
+                  </div>
+   
+                  <div class="card__data">
+                     <h3 class="card__name">Tally</h3>
+                     <p class="card__description" style="padding: 0px; font-size: 15px;">
+                        Project based assessment | World-wide online class |  
+                        International authourized certificate | Placement support.
+                     </p>
+   
+                     <a href="#" class="card__button">View More</a>
+                  </div>
+               </article>
+
+               <article class="card__article swiper-slide">
+                  <div class="card__image">
+                     <img src="images/ax.jpg" width="100%" style="border-radius: 25px 25px 0 0;">
+                     
+                  </div>
+   
+                  <div class="card__data">
+                     <h3 class="card__name">Excel</h3>
+                     <p class="card__description" style="padding: 0px; font-size: 15px;">
+                        Project based assessment | World-wide online class |  
+                        International authourized certificate | Placement support.
+                     </p>
+   
+                     <a href="#" class="card__button">View More</a>
+                  </div>
+               </article>
+
+               <article class="card__article swiper-slide">
+                  <div class="card__image">
+                     <img src="images/dm.jpg" width="100%" style="border-radius: 25px 25px 0 0;">
+                     
+                  </div>
+   
+                  <div class="card__data">
+                     <h3 class="card__name">Digital Marketing</h3>
+                     <p class="card__description" style="padding: 0px; font-size: 15px;">
+                        Project based assessment | World-wide online class |  
+                        International authourized certificate | Placement support.
+                     </p>   
+                     <a href="#" class="card__button">View More</a>
+                  </div>
+               </article>
+
+               <article class="card__article swiper-slide">
+                  <div class="card__image">
+                     <img src="images/sap.jpg" width="100%" style="border-radius: 25px 25px 0 0;">
+                     
+                  </div>
+   
+                  <div class="card__data">
+                     <h3 class="card__name">SAP | ERP</h3>
+                     <p class="card__description" style="padding: 0px; font-size: 15px;">
+                        Project based assessment | World-wide online class |  
+                        International authourized certificate | Placement support.
+                     </p>
+   
+                     <a href="#" class="card__button">View More</a>
+                  </div>
+               </article>
+
+               <article class="card__article swiper-slide">
+                  <div class="card__image">
+                     <img src="images/pm.jpg" width="100%" style="border-radius: 25px 25px 0 0;">
+                    
+                  </div>
+   
+                  <div class="card__data">
+                     <h3 class="card__name">Primevera</h3>
+                     <p class="card__description" style="padding: 0px; font-size: 15px;">
+                        Project based assessment | World-wide online class |  
+                        International authourized certificate | Placement support.
+                     </p>
+   
+                     <a href="#" class="card__button">View More</a>
+                  </div>
+               </article>
+
+               <article class="card__article swiper-slide">
+                  <div class="card__image">
+                     <img src="images/vera.jpg" width="100%" style="border-radius: 25px 25px 0 0;">
+                     
+                  </div>
+   
+                  <div class="card__data">
+                     <h3 class="card__name">PPM</h3>
+                     <p class="card__description" style="padding: 0px; font-size: 15px;">
+                        Project based assessment | World-wide online class |  
+                        International authourized certificate | Placement support.
+                     </p>
+   
+                     <a href="#" class="card__button">View More</a>
+                  </div>
+               </article>
+
+               
+            </div>
+         </div>
+
+         <!-- Navigation buttons -->
+         <div class="swiper-button-next">
+            <i class="ri-arrow-right-s-line"></i>
+         </div>
+         
+         <div class="swiper-button-prev">
+            <i class="ri-arrow-left-s-line"></i>
+         </div>
+
+         <!-- Pagination -->
+         <div class="swiper-pagination"></div>
+      </div>
+   </section>
+   
+   <!--footer -->
+
+   <br><br><br><br>
+
+   <footer>
+    
+    <div class="footer-containering container" style="padding: 20px;">
+        <div class="content_1" style="margin-top: -180px;">
+            <a href="#" style="font-weight: bold;font-size: 18px;color: #f39000;">CADPOINT</a>
+            <p>The customer is at the heart of our<br>unique business model, which includes<br>design.</p>
+        </div>
+        <div class="content_2" style="margin-top: -135px;">
+            <h4>FINEGAP</h4>
+            <a href="#sellers">Tutorials</a>
+            <a href="#sellers">Programing</a>
+            <a href="#sellers">Development</a>
+            <a href="#sellers">Technology</a>
+        </div>
+        <div class="content_3" style="margin-top: -100px;">
+          <h4>PROPERTIES</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="course.html">Cources</a>
+          <a href="project.html">Project</a>
+          <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="content_4" style="margin-top: -170px;">
+        <h4>PROPERTIES</h4>
+        <a href="#sellers">API Integration</a>
+        <a href="#sellers">Web Development</a>
+        <a href="#sellers">Mobile Development</a>
+    </div>
+    <div class="content_5" style="margin-top: -55px;">
+      <h4>NEWLETTER</h4>
+      <p>Be the first to know about new<br>arrivals, look books, sales & promos!</p>
+      <div class="f-mail" >
+        <input type="name" placeholder="Your Name" >
+        <i class='bx bx-envelope'></i>
+    </div>
+    <hr>
+      <div class="f-mail">
+          <input type="email" placeholder="Your Email">
+          <i class='bx bx-envelope'></i>
+      </div>
+            <hr>
+            <input type="submit" value="Submit" class="inputSubmit">
+        </div>
+    </div>
+</footer>
+  </body>
+   <!--=============== SWIPER JS ===============-->
+   <script src="assets/js/swiper-bundle.min.js"></script>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="assets/js/main.js"></script>
+</html>

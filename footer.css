@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap');
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+} */
+footer .container{
+    background-color:black;
+    height: 360px;
+    color: white;
+       
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+    
+}
+.footer-col ul{
+    list-style: none;
+}
+
+.footer-col h4{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 22px;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 50px;
+}
+
+.footer-col h4::before{
+    content: '';
+    width: 70px;
+    height: 2px;
+    position: absolute;
+    background-color: white;
+    bottom: -10px;
+}
+
+.footer-col ul li{
+    padding: 10px 0;
+    margin-left: 50px;
+}
+.footer-col ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footer-col ul li a:hover{
+    opacity: 1;
+}
+.footer-col input{
+    border: none;
+    width: 250px;
+    height: 45px;
+    display: block;
+    padding-left: 20px;
+    margin: 14px 0;
+    margin-left: 50px;
+}
+
+.footer-col .inputSubmit{
+    padding: 0px 20px;
+    background-color: white;
+    border: none;
+    color: #f39000;
+}
+.col p{
+    color: white;
+}
+.row hr{
+    opacity: 0.7;
+}
+
+/* .socialIcons i{
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    margin-top: -20px;
+    transition: 0.5s;
+    margin-left: -310px;
+    letter-spacing: 250px;  
+    margin-right: 5px;
+
+} */
+
+
+
+@media (max-width: 600px){
+    footer .row{
+        flex-direction: column;
+        padding: 20px 30px;
+    }
+
+    footer .footer-col ul{
+        
+        margin-bottom: 20px;
+    }
+    .footer-col input{
+        width: 100%;
+        margin-bottom: 50px;
+        
+
+    }
+    footer .container{
+        height:1200px;
+
+    }
+    }
+
+
+    
+
+
+
+

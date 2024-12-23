@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- navbar -->
+    <link rel="stylesheet" href="style.css"> 
+    
+    <link href="https://fonts.googleapis.com/css?family=Anton|Cabin|Lato|Fjalla+One|Montserrat|Roboto&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- <link rel="stylesheet" href="footer.css"/>  -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!--=============== CSS ===============-->
+      <!-- <link rel="stylesheet" href="assets/css/stylescss"> -->
+      <link rel="stylesheet" href="about.css">
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <style>
+        footer {
+          width: 100%;
+          background:black;
+      }
+      .footer-containering .content_1 img {
+          height: 25px;
+          width: 180px;
+      }
+      .footer-containering {
+          display: flex;
+          justify-content: space-between;
+          padding: 60px 0;
+      } 
+      .footer-containering h4 {
+          color:white;
+          font-weight: 500;
+          letter-spacing: 1px;
+          margin-bottom: 25px;
+          font-size: 18px;
+      }
+      .footer-containering a {
+          display: block;
+          text-decoration: none;
+          color:grey;
+          margin-bottom: 15px;
+          font-size: 14px;
+      }
+      .footer-containering .content_1 p,
+      .footer-containering .content_4 p {
+          color:grey;
+          margin: 25px 0;
+          font-size: 14px;
+      }
+      .footer-containering .content_4 input[type="email"] {
+          background-color:black;
+          border: none;
+          color:white;
+          outline: none;
+          padding: 15px 0;
+      }
+      .footer-containering .content_4 input[type="name"] {
+          background-color:black;
+          border: none;
+          color:white;
+          outline: none;
+          padding: 15px 0;
+      }
+      .footer-containering .content_4 .f-mail {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+      .content_4 .inputSubmit{
+    padding: 0px 20px;
+    background-color: #e91e64;
+    border: none;
+    color: white;
+    margin-top: 10px;
+    border-radius: 2px;
+    width: 150px;
+    height: 40px;
+}
+    .footer-containering .content_4 .bx {
+          color:white;
+      }
+     .f-design {
+          width: 100%;
+          color:white;
+          text-align: center;
+      }
+     .f-design .f-design-txt {
+          border-top: 1px solid grey;
+          padding: 25px 0;
+          font-size: 14px;
+          color: grey;
+      }
+      @media (max-width: 500px) {
+        .footer-containering {
+          display: flex;
+          flex-direction: column;
+          margin-left: 0;
+      }
+      .footer-containering .content_1 {
+          margin-bottom: 30px;
+          padding: 0px;
+          font-size: 16px;
+      }
+      .best-seller img {
+          padding-top: 40px;
+      }
+      .footer-col{
+         margin-left: -500px;
+      }
+      .footer-col h4{
+          margin-left: -100px;
+      }
+
+      }
+      @media(min-width: 501px) and (max-width: 768px) {
+        .footer-containering {
+          display: flex;
+          flex-direction: column;
+      }
+      .footer-containering .content_1 {
+          margin-bottom: 30px;
+          
+          
+      }
+      .best-seller img {
+          padding-top: 40px;
+      }
+      .footer-containering{
+        padding: 50px;
+        margin-left: 30px;
+      }
+      }
+
+      /* carouseul slide */
+
+      .slide-content h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 60px;
+  text-transform: uppercase;
+  margin-left: 240px;
+  font-weight: lighter;
+  line-height: 55px;
+}
+.slide-2 h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-left: 80px;
+  font-weight: lighter;
+  line-height: 55px;
+}
+.slide-3 h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-left: 40px;
+  font-weight: lighter;
+  line-height: 55px;
+}
+
+
+    /* Mobile view (max-width: 480px) */
+    @media (max-width: 480px) {
+      .slide-content h1 {
+        font-size: 25px;
+        margin-left: 25px;
+        letter-spacing: 1px;
+      }
+
+      .slide-2 h1,
+      .slide-3 h1 {
+        font-size: 25px;
+        margin-left: 5px;
+        letter-spacing: 1px;
+      }
+    }
+
+      /* course card */
+		.sound
+		{
+			display: flex;
+			align-items: center;
+		 	justify-content: center; 
+		 	flex-wrap: wrap;
+             margin: 0;
+             padding: 0;
+
+
+		}
+
+		.card img 
+		{
+			width:297px;
+			height: 200px;
+			 
+		}
+
+		.card
+		{
+			background-color: white;
+			margin: 10px 10px;
+			width: 300px;
+			border: 3px solid #DFE7E0;
+
+		}
+
+		.card p 
+		{
+			padding: 10px;
+            font-size: 14px;
+		}
+
+		.card a
+
+		{
+			background-color: black;
+			padding: 10px;
+			text-align: center;
+			display: block;
+			margin: 20px 80px;
+			text-decoration: none;
+			color: white;
+
+		}
+        .card a:hover
+
+		{
+			background-color: #f39000;
+			padding: 10px;
+			text-align: center;
+			display: block;
+			margin: 20px 80px;
+			text-decoration: none;
+			color: white;
+            transition: 0.3 ease;
+
+		}
+
+		.card:hover
+		{
+			background-color: whitesmoke;
+			transition:all 1s ease;
+			transform: scale(1.10);
+		}
+
+		
+
+</style>
+</head>
+<body>
+  <!-- navbar -->
+
+    <header class="header">
+        <a href="#" class="logo">Cadpoint</a>
+  
+        <div class="menu-btn"></div>
+  
+        <div class="nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="course.html">Courses</a>
+          <a href="project.html">Projects</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <script src="app.js"></script>
+      </header>
+
+     <!-- slider -->
+
+      <div class="owl-carousel owl-theme">
+        <div class="slide slide-1">
+            <div class="slide-content">
+                <h1>Our Courses</h1>
+            </div>
+        </div>
+        <div class="slide slide-2">
+            <div class="slide-content">
+                <h1>Limitless Learning With <span style="color: #f39000; font-weight: bold;">Cadpoint</span>.<h1>
+            </div>
+        </div>
+        <div class="slide slide-3">
+            <div class="slide-content">
+               <h1>Choose From Unlimited Options.</h1>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Custom Javascript -->
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                items:1,
+                loop:true,
+                nav:true,
+                dots:true,
+                autoplay:true,
+                autoplaySpeed:1000,
+                smartSpeed:1500,
+                autoplayHoverPause:true
+            });
+        });
+    </script>
+
+    <!-- courses -->
+    
+    <div class="sound">
+        <div class="card">
+            
+            <img src="images/program/prg.jpg">
+            <h3 style="text-align: center; color: #f39000;">Programming</h3>
+            <p>It solve problems, automate processes, and create software applications.</p>
+            <a href="page1.html">More Info</a>
+        </div>
+    
+    
+        <div class="card">
+            
+            <img src="images/program/gdesign.png">
+            <h3 style="text-align: center; color: #f39000;">Graphic Design</h3>
+            <p>It is the creative process of visually communicating ideas.</p>
+            <a href="page2.html">More Info</a>
+        </div>
+    
+    
+    
+        <div class="card">
+            
+            <img src="images/program/taly.jpg">
+            <h3 style="text-align: center; color: #f39000;">Accounting</h3>
+            <p>It is the process of recording, analyzing and reporting financial transactions.</p>
+            <a href="page3.html">More Info</a>
+        </div>
+        </div>
+
+        <div class="sound">
+            <div class="card">
+                
+                <img src="images/program/civil.png">
+                <h3 style="text-align: center; color: #f39000;">Civil</h3>
+                <p>It involves the design, construction and maintenance of infrastructure projects.</p>
+                <a href="page4.html">More Info</a>
+            </div>
+        
+        
+            <div class="card">
+                
+                <img src="images/program/mech.jpg">
+                <h3 style="text-align: center; color: #f39000;">Mechanical</h3>
+                <p>It focuses on the design, analysis, and manufacturing.</p>
+                <a href="page5.html">More Info</a>
+            </div>
+        
+        
+        
+            <div class="card">
+                
+                <img src="images/program/eee.jpeg">
+                <h3 style="text-align: center; color: #f39000;">EEE</h3>
+                <p>It deals with the study, design, and application of electrical system.</p>
+                <a href="page6.html">More Info</a>
+            </div>
+            </div>
+    
+    <!-- footer -->
+<br><br>
+
+<footer>
+ 
+ <div class="footer-containering container" style="padding: 20px;">
+     <div class="content_1">
+         <a href="#">CADPOINT</a>
+         <p>The customer is at the heart of our<br>unique business model, which includes<br>design.</p>
+     </div>
+     <div class="content_2">
+         <h4>FINEGAP</h4>
+         <a href="#sellers">Tutorials</a>
+         <a href="#sellers">Programing</a>
+         <a href="#sellers">Development</a>
+         <a href="#sellers">Technology</a>
+     </div>
+     <div class="content_2">
+        <h4>PROPERTIES</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="course.html">Courses</a>
+        <a href="project.html">Project</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+   <div class="content_2">
+     <h4>PROPERTIES</h4>
+     <a href="#sellers">API Integration</a>
+     <a href="#sellers">Web Development</a>
+     <a href="#sellers">Mobile Development</a>
+ </div>
+ <div class="content_4">
+   <h4>NEWLETTER</h4>
+   <p>Be the first to know about new<br>arrivals, look books, sales & promos!</p>
+   <div class="f-mail">
+     <input type="name" placeholder="Your Name">
+     <i class='bx bx-envelope'></i>
+ </div>
+ <hr>
+   <div class="f-mail">
+       <input type="email" placeholder="Your Email">
+       <i class='bx bx-envelope'></i>
+   </div>
+         <hr>
+         <input type="submit" value="Submit" class="inputSubmit">
+     </div>
+ </div>
+</footer>
+</body>
+<!--=============== SWIPER JS ===============-->
+<script src="assets/js/swiper-bundle.min.js"></script>
+
+<!--=============== MAIN JS ===============-->
+<script src="assets/js/main.js"></script>
+
+</html>

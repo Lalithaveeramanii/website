@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- navbar -->
+    
+    
+    <link href="https://fonts.googleapis.com/css?family=Anton|Cabin|Lato|Fjalla+One|Montserrat|Roboto&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- <link rel="stylesheet" href="footer.css"/>  -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!--=============== CSS ===============-->
+      <!-- <link rel="stylesheet" href="assets/css/stylescss"> -->
+       <link rel="stylesheet" href="about.css"> 
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+   background: white;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 200px;
+  z-index: 1000;
+  transition: 0.3s;
+}
+
+.header .logo {
+  font-size: 25px;
+  font-weight: 600;
+  color: #720505;
+}
+
+.header .nav a {
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ff3900;;
+  margin-left: 30px;
+  transition: 0.3s;
+}
+
+.header .nav a::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #fff;
+  left: 0;
+  bottom: 0;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.header .nav a:hover:before {
+  width: 100%;
+}
+
+section {
+  padding: 100px 200px;
+}
+
+.home {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #222;
+}
+
+.home .content {
+  color: #fff;
+  width: 70%;
+  margin-top: 50px;
+  z-index: 900;
+}
+
+.home .content h1 {
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 75px;
+  margin-bottom: 15px;
+}
+
+.home .content h1 span {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.home .content p {
+  margin-bottom: 50px;
+}
+
+.home .content a {
+  background: #fff;
+  color: #222;
+  padding: 15px 35px;
+  border-radius: 2px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.home .icons {
+  position: absolute;
+  right: 60px;
+  display: flex;
+  flex-direction: column;
+  z-index: 900;
+}
+
+.home .icons a {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.home .icons a:hover {
+  transform: scale(1.3);
+}
+
+.home video {
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  clip-path: circle(0% at 0 50%);
+}
+
+.home video.active {
+  clip-path: circle(150% at 0 50%);
+  transition: 2s;
+}
+
+.home::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(1, 1, 1, 0.5);
+  z-index: 700;
+  left: 0;
+  top: 0;
+}
+
+.video-nav {
+  z-index: 800;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  transform: translateY(80px);
+  margin-bottom: 12px;
+}
+
+.video-nav .nav-item {
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.video-nav .nav-item.active {
+  width: 30px;
+}
+
+@media (max-width: 1040px) {
+  .header {
+    padding: 12px 40px;
+  }
+
+  section {
+    padding: 100px 40px;
+  }
+
+  .home .icons {
+    right: 30px;
+  }
+}
+
+@media (max-width: 670px) {
+  .header .nav {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(1, 1, 1, 0.5);
+    display: none;
+  }
+
+  .header.active .nav {
+    display: flex;
+  }
+
+  .header .nav a {
+    background: #fff;
+    color: #000;
+    width: 500px;
+    padding: 20px;
+    text-align: center;
+    font-size: 19px;
+    margin-left: 0px;
+  }
+
+  .header .nav a:hover {
+    background: #222;
+    color: #fff;
+  }
+
+  .header .menu-btn {
+    width: 40px;
+    height: 40px;
+    background: url(media/menu.png) no-repeat;
+    background-size: 30px;
+    background-position: center;
+    filter: invert(1);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .header.active .menu-btn {
+    z-index: 1000;
+    background: url(media/close.png) no-repeat;
+    background-size: 20px;
+    background-position: center;
+    transition: 0.3s;
+  }
+}
+       
+
+/* video css  */
+
+ 
+       #bg-video{
+width: 100%;
+
+background-size: cover;
+margin-top: -400px;
+
+}
+#bgg-video{
+    width: 100%;
+    
+    background-size: cover;
+    margin-top: -170px;
+    }
+
+.title{
+font-size: 45px;
+color: #e5e5e7;
+margin-top: -190px;
+font-weight: bold;
+font-family: 'Times New Roman', Times, serif;
+
+
+}
+@media(max-width:991px){
+    #bg-video
+    {
+        height: 1000px;
+       
+        
+
+    }
+  .kun{
+       margin-top: -600px;
+    }
+   
+    .kun{
+        margin-top: -170px;
+    }
+    header h1{
+        margin-top: -250px;
+    }
+    .title{
+        margin-top: -540px;
+        font-size: 30px;
+    }
+  
+} 
+
+
+
+/* content */
+
+
+.slideshow-container {
+            width: 55%;
+            margin: 30px auto;
+            position: relative;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            font-family: Arial, sans-serif;
+            background-color: #f5efef;
+          
+        }
+
+        .slide {
+            display: none;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .slide img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .course-info {
+            margin-top: 15px;
+        }
+
+        .course-info h2 {
+            font-size: 1.6em;
+            margin: 10px 0;
+        }
+
+        .course-info p {
+            color: #777;
+            font-size: 1em;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            background-color: rgba(0,0,0,0.5);
+        }
+        .prev {
+            left: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        /* Dot navigation */
+        .dots {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+        @media screen and (max-width: 768px) {
+            .slideshow-container {
+                width: 80%;
+                padding: 10px;
+            }
+
+            .course-info h2 {
+                font-size: 1.4em;
+            }
+
+            .course-info p {
+                font-size: 0.9em;
+            }
+
+            .prev, .next {
+                font-size: 16px;
+                padding: 12px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .slideshow-container {
+                width: 80%;
+                padding: 5px;
+            }
+
+            .course-info h2 {
+                font-size: 1.2em;
+            }
+
+            .course-info p {
+                font-size: 0.85em;
+            }
+
+            .prev, .next {
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            .dots {
+                margin-top: 5px;
+            }
+
+            .dot {
+                height: 12px;
+                width: 12px;
+            }
+        }
+
+
+        /* footer */
+
+
+        footer {
+          width: 100%;
+          background:black;
+      }
+      .footer-containering .content_1 img {
+          height: 25px;
+          width: 180px;
+      }
+      .footer-containering {
+          display: flex;
+          justify-content: space-between;
+          padding: 60px 0;
+      } 
+      .footer-containering h4 {
+          color:white;
+          font-weight: 500;
+          letter-spacing: 1px;
+          margin-bottom: 25px;
+          font-size: 18px;
+      }
+      .footer-containering a {
+          display: block;
+          text-decoration: none;
+          color:grey;
+          margin-bottom: 15px;
+          font-size: 14px;
+      }
+      .footer-containering .content_1 p,
+      .footer-containering .content_4 p {
+          color:grey;
+          margin: 25px 0;
+          font-size: 14px;
+      }
+      .footer-containering .content_4 input[type="email"] {
+          background-color:black;
+          border: none;
+          color:white;
+          outline: none;
+          padding: 15px 0;
+      }
+      .footer-containering .content_4 input[type="name"] {
+          background-color:black;
+          border: none;
+          color:white;
+          outline: none;
+          padding: 15px 0;
+      }
+      .footer-containering .content_4 .f-mail {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+      .content_4 .inputSubmit{
+    padding: 0px 20px;
+    background-color: #e91e64;
+    border: none;
+    color: white;
+    margin-top: 10px;
+    border-radius: 2px;
+    width: 150px;
+    height: 40px;
+}
+    .footer-containering .content_4 .bx {
+          color:white;
+      }
+     .f-design {
+          width: 100%;
+          color:white;
+          text-align: center;
+      }
+     .f-design .f-design-txt {
+          border-top: 1px solid grey;
+          padding: 25px 0;
+          font-size: 14px;
+          color: grey;
+      }
+      @media (max-width: 500px) {
+        .footer-containering {
+          display: flex;
+          flex-direction: column;
+          margin-left: 0;
+      }
+      .footer-containering .content_1 {
+          margin-bottom: 30px;
+          padding: 0px;
+          font-size: 16px;
+      }
+      .best-seller img {
+          padding-top: 40px;
+      }
+      .footer-col{
+         margin-left: -500px;
+      }
+      .footer-col h4{
+          margin-left: -100px;
+      }
+      }
+      @media(min-width: 501px) and (max-width: 768px) {
+        .footer-containering {
+          display: flex;
+          flex-direction: column;
+      }
+      .footer-containering .content_1 {
+          margin-bottom: 30px;   
+      }
+      .best-seller img {
+          padding-top: 40px;
+      }
+      .footer-containering{
+        padding: 50px;
+        margin-left: 30px;
+      }
+      }
+
+</style>
+</head>
+<body>
+  <!-- navbar -->
+
+    <header class="header">
+        <a href="#" class="logo">Cadpoint</a>
+  
+        <div class="menu-btn"></div>
+  
+        <div class="nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="course.html">Courses</a>
+          <a href="project.html">Projects</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <script src="app.js"></script>
+      </header>
+      
+      <br>
+      
+            <video autoplay muted loop id="bg-video">
+                <source src="images/ele.mp4" type="video/mp4"  />
+               
+        </video>
+
+        <h1 class="title" align="center">ElECTRICAL AND ELECTRONICAL <br>ENGINEERING</h1>
+
+        <br><br>
+        <br><br>
+        <br><br>
+
+
+        <!-- content -->
+
+        <div class="slideshow-container">
+
+          <!-- Slides -->
+          <div class="slide">
+              <img src="images/EEE/2d.jpg" alt="Course 1">
+              <div class="course-info">
+                  <h2>AutoCAD 2D</h2>
+                  <p>AutoCAD 2D is used to create detailed electrical schematics, circuit layouts, and wiring diagrams for designing and analyzing electrical systems.</p>
+              </div>
+          </div>
+        
+          <div class="slide">
+              <img src="images/EEE/elecad.jpg" alt="Course 2">
+              <div class="course-info">
+                  <h2>Electrical CAD</h2>
+                  <p>Electrical CAD in EEE is specialized software for creating and documenting electrical schematics, panel layouts, control diagrams, and wiring connections, facilitating accurate design and analysis in electrical engineering projects.</p>
+              </div>
+          </div>
+        
+          <div class="slide">
+              <img src="images/EEE/revit.jpg" alt="Course 3">
+              <div class="course-info">
+                  <h2>Revit MEP</h2>
+                  <p>Revit MEP in EEE CAD is used to design, model, and analyze electrical, mechanical, and plumbing systems within building projects.</p>
+              </div>
+          </div>
+        
+          
+        
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        
+        <!-- Three Dot navigation -->
+        <div class="dots">
+          <span class="dot" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+        </div>
+        
+        <script>
+          let slideIndex = 0;
+          showSlides();
+        
+          // Auto-move function to display slides
+          function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("slide");
+              let dots = document.getElementsByClassName("dot");
+              
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+                  dots[i % dots.length].className = "dot"; // Reset dot classes
+              }
+              
+              slideIndex++;
+              if (slideIndex > slides.length) { slideIndex = 1 }
+              
+              slides[slideIndex-1].style.display = "block";
+              
+              // Update the active dot
+              dots[(slideIndex - 1) % dots.length].className = "dot active";
+              
+              // Change slide every 5 seconds
+              setTimeout(showSlides, 1000);
+          }
+        
+          // Next/previous controls
+          function plusSlides(n) {
+              slideIndex += n - 1; // Adjust slideIndex to move forward or backward
+              showSlides();
+          }
+        </script>
+
+
+   <br><br><br><br><br><br><br><br><br><br> 
+      <!--footer -->
+
+
+      <footer>
+    
+        <div class="footer-containering container" style="padding: 20px;">
+            <div class="content_1">
+                <a href="#">CADPOINT</a>
+                <p>The customer is at the heart of our<br>unique business model, which includes<br>design.</p>
+            </div>
+            <div class="content_2">
+                <h4>FINEGAP</h4>
+                <a href="#sellers">Tutorials</a>
+                <a href="#sellers">Programing</a>
+                <a href="#sellers">Development</a>
+                <a href="#sellers">Technology</a>
+            </div>
+            <div class="content_2">
+              <h4>PROPERTIES</h4>
+              <a href="#sellers">Home</a>
+              <a href="#sellers">About</a>
+              <a href="#sellers">Contact US</a>
+              <a href="#sellers">Team</a>
+              <a href="#sellers">ur History</a>
+          </div>
+          <div class="content_2">
+            <h4>PROPERTIES</h4>
+            <a href="#sellers">API Integration</a>
+            <a href="#sellers">Web Development</a>
+            <a href="#sellers">Mobile Development</a>
+        </div>
+        <div class="content_4">
+          <h4>NEWLETTER</h4>
+          <p>Be the first to know about new<br>arrivals, look books, sales & promos!</p>
+          <div class="f-mail">
+            <input type="name" placeholder="Your Name">
+            <i class='bx bx-envelope'></i>
+        </div>
+        <hr>
+          <div class="f-mail">
+              <input type="email" placeholder="Your Email">
+              <i class='bx bx-envelope'></i>
+          </div>
+                <hr>
+                <input type="submit" value="Submit" class="inputSubmit">
+            </div>
+        </div>
+    </footer>
+
+    
+ </body>
+   <!--=============== SWIPER JS ===============-->
+   <script src="assets/js/swiper-bundle.min.js"></script>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="assets/js/main.js"></script>
+ 
+</html>
